@@ -1,23 +1,23 @@
 variable "aws_region" {
   description = "The AWS region to create things in."
-  default     = "eu-central-1"
+  default     = "DEFAULT ZONE"
 }
 
 # custom image
 variable "aws_amis" {
   default = {
-    "eu-central-1" = "ami-9b38e6f4"
+    "eu-central-1" = "YOUR AMI"
   }
 }
 
 # NAT image
 variable "aws_natami" {
-  default = "ami-9b38e6f4"
+  default = "YOUR AMI"
   description = "Nat AMI"
 }
 
 variable "availability_zones" {
-  default     = "eu-central-1a"
+  default     = "DEFAULT ZONES"
   description = "List of availability zones, use AWS CLI to find your "
 }
 
@@ -33,10 +33,10 @@ variable "threshold_plus" {
 
 variable "key_name" {
   description = "Key name"
-  default     = "stage-cvo"
+  default     = "KEY NAME"
 }
 
 variable "instance_type" {
-  default     = "t2.micro"
+  default     = "INSTANCE SIZE"
   description = "AWS instance type"
 }
