@@ -6,7 +6,7 @@ variable "aws_region" {
 # custom image
 variable "aws_amis" {
   default = {
-    "eu-central-1" = "YOUR AMI"
+    "YOUR ZONE" = "YOUR AMI"
   }
 }
 
